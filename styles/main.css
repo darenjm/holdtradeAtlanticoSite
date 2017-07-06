@@ -1,0 +1,201 @@
+/* Holdtrade Atlantico*/
+/* colors:  blue: #001d45/0,29,69 
+            red: #af2922/175,41,34
+            ltgray: #d1d3d3/209,211,211
+            dkgray: #5e525c/94,82,92
+            htgreen: #037c40/14,124,64
+*/
+
+html,header, footer, body, nav, div, img, a,ul, li, h1, h2{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+*{box-sizing: border-box;}
+html{
+	font-size: 14px;
+}
+
+header{
+    background:#001d45;
+    width:100%;
+    height:108px;
+    text-align: center;
+}
+.logo-top img{
+    margin:0 auto;
+    width:130px;
+    margin-top:15px;
+}
+.site-logo img{
+    width:175px;
+    margin-top:-38px;
+    z-index:1000;
+}
+
+nav{
+    width:75%;
+    margin: 0 auto;
+    font-family: helvetica;
+    font-size: 90%;
+    text-transform:uppercase;
+    text-align: left;
+}
+.menu-arrow{
+    color:#af2922;
+    font-size:90%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding:0;
+    margin:0;
+    transition:all .1s ease-in-out;
+}
+nav ul li > ul{
+    display: flex;
+    flex-direction: column;
+    background:#af2922; 
+    font-size:90%;
+}
+.drop{
+    list-style:none;
+}
+nav ul li:not(.drop){
+    align-self: flex-start;
+}
+nav ul li:not(.drop){
+    margin-top:84px;
+}
+nav ul li > ul > li:hover a{
+    background:#cc534d;
+}
+nav ul li a{
+    display:inline-block;
+    color:#fff;
+    padding:5px 10px;
+}
+nav ul li ul li a{
+    display:block;
+}
+nav ul li:hover > a{
+    background:#af2922;
+}
+nav > ul ul{
+    position:absolute;
+    visibility:hidden;
+    opacity:0;
+}
+nav ul li:hover > ul{
+    visibility:visible;
+    opacity:1;
+}
+
+.clearfix:after{
+    display:block;
+    content:"";
+    clear:both;
+}
+
+@media (min-width: 1214px){
+    .logo-top img{
+        margin:0 auto;
+        width:210px;
+        display: none;
+    }
+    .hamburger{
+        display:none;
+    }
+    .mobile-menu{
+        display: none;
+    }
+}
+
+@media (max-width: 1213px){
+    .site-logo{
+        display:none;
+    } 
+    header{
+        height:130px;
+        font-size:95%;
+    }
+    nav ul li:not(.drop){
+    margin-top:5px;
+    }
+}
+@media (max-width: 910px){
+    header{
+        height:108px;
+    }
+    .logo-top img{
+        margin:0 auto;
+        width:246px;
+        margin-top:27px;
+    }
+    .main-menu{
+        display:none;
+    }
+    .mobile-menu{
+        background-color:#001d45;
+        text-transform: uppercase;
+        font-family: helvetica;
+        font-size:110%;
+        font-weight: 400;
+        height:0;
+        overflow:hidden;
+        }
+    .mobile-menu--open{
+        height:489px;
+    }
+    .mobile-menu ul{
+        text-align: center;
+        margin: 0;
+        padding:90px 0 0 0;
+    }
+    .mobile-menu ul li{
+        padding:0;
+        margin:0;
+    }
+    .mobile-menu ul li a{
+        display:block;
+        padding:20px 10px;
+        color:#fff;
+    }
+    .mobile-menu ul li a:hover{
+        background-color:#af2922;
+    }
+    .menu-toggle{
+        padding:20px 5px;
+        margin:-148px 30px 0 0;
+        float:right;
+        cursor:pointer;
+    }
+    .hamburger,
+    .hamburger:before,
+    .hamburger:after{
+        content:"";
+        display:block;
+        background:#fff;
+        height: 4px;
+        width:35px;
+    }
+    .hamburger:before{
+        transform:translateY(-9px);
+    }
+    .hamburger:after{
+        transform:translateY(5px);
+    }
+}
+@media (min-width: 910px){
+    .mobile-menu{
+        display:none;
+    }
+}
+
+
+
+
+
+
+
