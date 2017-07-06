@@ -3,9 +3,9 @@
             red: #af2922/175,41,34
             ltgray: #d1d3d3/209,211,211
             dkgray: #5e525c/94,82,92
-            htgreen: #037c40/14,124,64
-*/
+            htgreen: #037c40/14,124,64 */
 
+/* Global Styles */
 html,header, footer, body, nav, div, img, a,ul, li, h1, h2{
 	margin: 0;
 	padding: 0;
@@ -16,7 +16,13 @@ html,header, footer, body, nav, div, img, a,ul, li, h1, h2{
 html{
 	font-size: 14px;
 }
+.clearfix:after{
+    display:block;
+    content:"";
+    clear:both;
+}
 
+/* Header and Nav - Menu */
 header{
     background:#001d45;
     width:100%;
@@ -33,7 +39,6 @@ header{
     margin-top:-38px;
     z-index:1000;
 }
-
 nav{
     width:75%;
     margin: 0 auto;
@@ -92,12 +97,65 @@ nav ul li:hover > ul{
     opacity:1;
 }
 
-.clearfix:after{
-    display:block;
-    content:"";
-    clear:both;
+/* Hero Section */
+.hero{
+	background: url("../images/HoldtradeAtlantico-Freight-Train.jpg") 50% 68% no-repeat;
+	height: 946px;
+	position: relative;
+	width: 100%;
+	padding: 40px 0;
+    z-index:-1;
+}
+.headline{
+    float:right;
+    font-family:helvetica;
+    margin:-40px 50px 0 0;
+}
+.headline h1{
+    color:#001d45;
+    letter-spacing:.05em;
+    font-size:2.8em;
+}
+.headline p{
+    color:#5e525c;
+    letter-spacing:.08em;
+    line-height: 21px;
+    margin-top: -15px;
+}
+.icon-big-box{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:279px;
+    width:100%;
+    background-color:rgba(255,255,255,.3);
+    position:absolute;
+    bottom:78px;
+    overflow:visible;
+    padding:0 8%;
+}
+.icon-box{
+    width:28%;
+    height:355px;
+    background-color:#af2922;
+    box-shadow: 3px 3px 20px -3px #000;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
 @media (min-width: 1214px){
     .logo-top img{
         margin:0 auto;
@@ -111,7 +169,6 @@ nav ul li:hover > ul{
         display: none;
     }
 }
-
 @media (max-width: 1213px){
     .site-logo{
         display:none;
@@ -122,8 +179,7 @@ nav ul li:hover > ul{
     }
     nav ul li:not(.drop){
     margin-top:5px;
-    }
-    
+    }   
     @-moz-document url-prefix() {
     nav ul li:not(.drop){
     margin-top:3px;
