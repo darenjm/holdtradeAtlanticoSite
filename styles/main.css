@@ -123,6 +123,12 @@ nav ul li:hover > ul{
     nav ul li:not(.drop){
     margin-top:5px;
     }
+    
+    @-moz-document url-prefix() {
+    nav ul li:not(.drop){
+    margin-top:3px;
+    }
+    }    
 }
 @media (max-width: 910px){
     header{
