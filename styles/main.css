@@ -100,20 +100,32 @@ nav ul li:hover > ul{
 }
 
 /* ====== Hero Section ====== */
-.hero{
+/*.hero{
 	background: url("../images/HoldtradeAtlantico-Freight-Train.jpg") 50% 68% no-repeat;
 	height: 946px;
 	position: relative;
-	width: 100%;
+	max-width: 100%;
 	padding:40px 20px 0 0;
     margin:0;
     z-index:-1;
     display:block;
+}*/
+.hero img{
+    margin:0;
+}
+.hero{
+    position:relative;
+    z-index:-100;
+    overflow: hidden;
+    margin:0;
 }
 .headline{
     float:right;
     font-family:helvetica;
-    margin:-40px 40px 0 0;
+    /*margin:-40px 40px 0 0;*/
+    position:absolute;
+    top:20px;
+    right:20px;
 }
 .headline h1{
     color:#001d45;
@@ -154,6 +166,7 @@ nav ul li:hover > ul{
 }
 .icon-box img{
     margin:20px 0 30px 0;
+    max-width:100%;
 }
 .icon-box h2{
     font-size:24px;
@@ -179,9 +192,10 @@ nav ul li:hover > ul{
     background-color:#001d45;
     letter-spacing:.05em;
     font-weight:400;
+    margin:-3px 0 0 0;
 }
 .intro-text{
-    margin-top:54px;
+    margin:54px auto;
 }
 .intro-text p{
     line-height: 28px;
@@ -195,10 +209,16 @@ nav ul li:hover > ul{
 .gallery{
     display:flex;
     justify-content:space-between;
-    margin:54px 0;
+}
+.intro-img img{
+    max-width:100%;
+    border:solid 1px #d1d3d3;
+}
+.intro-img:nth-child(2){
+    margin:0 5%;
 }
 .gallery p{
-    margin:10px 0 0 2px;
+    margin:5px 0 54px 2px;
 }
 .banner-partners{
     width:100%;
