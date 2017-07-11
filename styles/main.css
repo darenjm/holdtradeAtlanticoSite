@@ -6,7 +6,7 @@
             htgreen: #037c40/14,124,64 */
 
 /* ===== Global Styles ===== */
-html,header, footer, body, nav, div, img, a,ul, li, h1, h2{
+html,header, footer, body, nav, div, img, a,ul, li, p, h1, h2{
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
@@ -231,6 +231,72 @@ nav ul li:hover > ul{
     justify-content:space-around;
     align-items:center;
 }
+
+/* ===== FOOTER ===== */
+footer{
+    width:100%;
+    height:520px;
+    background-color:#001d45;
+}
+.footer-block{
+    display:flex;
+    width:80%;
+    margin:0 auto;
+    padding-top:45px;
+    color:#fff;
+}
+.footer-box-logo{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width:32%;
+    padding:0 70px;
+}
+.footer-box-logo img{
+    margin-bottom:20px;
+}
+.footer-box-logo p{
+    line-height:1.4em;
+}
+.footer-box-menu{
+    margin-left:-20px;
+}
+.footer-box-menu ul{
+    padding:0 40px;
+}
+.footer-box-menu li{
+    margin-bottom:15px;
+}
+.footer-box-menu li a{
+    color:#fff;
+}
+.footer-box-menu .indent{
+    padding-left:20px;
+}
+.footer-box-menu li a strong{
+    text-transform:uppercase;
+}
+.footer-box-menu.right{
+    margin-right:30px;
+}
+.footer-box.contact{
+    padding-left:20px;
+}
+.footer-box.contact p strong{
+    text-transform:uppercase;
+}
+.country{
+    margin-top:15px;
+    margin-bottom:5px;
+    text-transform:uppercase;
+    font-size:12px;
+}
+.footer-box p.bio{
+    line-height:1.5em;
+    font-size: 12px;
+}
+
+
 
 
 
