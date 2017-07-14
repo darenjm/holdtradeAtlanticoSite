@@ -88,7 +88,7 @@ nav ul li:not(.drop){
     margin-top:84px;
 }
 nav ul li > ul > li:hover a{
-    background:#cc534d;
+    background:#003399;
 }
 nav ul li a{
     display:inline-block;
