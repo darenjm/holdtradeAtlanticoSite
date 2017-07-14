@@ -1,9 +1,10 @@
 /* Holdtrade Atlantico*/
-/* colors:  blue: #001d45/0,29,69 
-            red: #af2922/175,41,34
-            ltgray: #d1d3d3/209,211,211
+/* colors:  blue: #003399/0,51,153 
+            red: cc0000/204,0,0
+            ltgray: #d1d3d3/209,211,211               
             dkgray: #5e525c/94,82,92
             htgreen: #037c40/14,124,64 */
+            
 
 /* ===== GLOBAL STYLES ===== */
 html,header, footer, body, nav, div, img, a,ul, li, p, h1, h2{
@@ -14,7 +15,12 @@ html,header, footer, body, nav, div, img, a,ul, li, p, h1, h2{
     font-family:helvetica, sans-serif;
     font-weight:100;
 }
-*{box-sizing: border-box;}
+body{
+    background-color:#fffff1;
+}
+*{
+    box-sizing: border-box;
+}
 html{
 	font-size: 14px;
 }
@@ -32,7 +38,7 @@ html{
 
 /* ===== HEADER AND NAV - MENU ===== */
 header{
-    background:#001d45;
+    background:#003399;
     width:100%;
     height:108px;
     text-align: center;
@@ -56,7 +62,7 @@ nav{
     text-align: left;
 }
 .menu-arrow{
-    color:#af2922;
+    color:#cc0000;
     font-size:90%;
 }
 nav ul{
@@ -69,7 +75,7 @@ nav ul{
 nav ul li > ul{
     display: flex;
     flex-direction: column;
-    background:#af2922; 
+    background:#cc0000; 
     font-size:90%;
 }
 .drop{
@@ -93,7 +99,7 @@ nav ul li ul li a{
     display:block;
 }
 nav ul li:hover > a{
-    background:#af2922;
+    background:#cc0000;
 }
 nav > ul ul{
     position:absolute;
@@ -136,7 +142,7 @@ nav ul li:hover > ul{
     right:40px;
 }
 .headline h1{
-    color:#001d45;
+    color:#003399;
     letter-spacing:.05em;
     font-size:2.8em;
     font-weight:700;
@@ -169,7 +175,7 @@ nav ul li:hover > ul{
     color:#fff;
     width:29%;
     height:355px;
-    background-color:#af2922;
+    background-color:#cc0000;
     box-shadow: 3px 3px 20px -3px #000;
 }
 .icon-box img{
@@ -192,7 +198,7 @@ nav ul li:hover > ul{
     color:#fff;
     width:100%;
     height:54px;
-    background-color:#001d45;
+    background-color:#003399;
     letter-spacing:.05em;
     font-weight:400;
     margin:-4px 0 0 0;
@@ -206,7 +212,7 @@ nav ul li:hover > ul{
     text-align:justify;
 }
 .intro-text p strong{
-    color:#001d45;
+    color:#003399;
     font-weight:700;
 }
 
@@ -229,7 +235,7 @@ nav ul li:hover > ul{
 /* ===== PARTNERS ===== */
 .banner-partners{
     width:100%;
-    background-color:#af2922;
+    background-color:#cc0000;
     padding-top:30px;
 }
 .logos{
@@ -243,7 +249,7 @@ nav ul li:hover > ul{
 footer{
     width:100%;
     height:520px;
-    background-color:#001d45;
+    background-color:#003399;
 }
 .footer-block{
     display:flex;
@@ -398,7 +404,7 @@ footer{
         display:none;
     }
     .mobile-menu{
-        background-color:#001d45;
+        background-color:#003399;
         text-transform: uppercase;
         font-family: helvetica;
         font-size:110%;
@@ -424,7 +430,7 @@ footer{
         color:#fff;
     }
     .mobile-menu ul li a:hover{
-        background-color:#af2922;
+        background-color:#cc0000;
     }
     .menu-toggle{
         padding:20px 5px;
@@ -469,7 +475,7 @@ footer{
         display:none;
     }
     .icon-big-box{
-        background:#af2922;
+        background:#cc0000;
         height:355px;
         bottom:-350px;
         z-index:100;
