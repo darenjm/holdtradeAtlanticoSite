@@ -1,4 +1,4 @@
-/* Holdtrade Atlantico*/
+/* Holdtrade Atlantico */
 /* colors:  blue: #2a2955/0,51,153 
             red: #b10305/204,0,0
             ltgray: #d1d3d3/209,211,211               
@@ -8,7 +8,7 @@
 
 /* ===== GLOBAL STYLES ===== */
 html,header, footer, body, nav, div, img, a,ul, li, p, h1, h2{
-	margin: 0;
+	margin: 0
 	padding: 0;
 	text-decoration: none;
 	list-style-type: none;
@@ -29,12 +29,14 @@ strong{
 }
 body{
     background-color:#fffff1;
+    margin:0;
 }
 *{
     box-sizing: border-box;
 }
 html{
 	font-size: 14px;
+    height:100%;
 }
 .clearfix:after{
     display:block;
@@ -42,7 +44,7 @@ html{
     clear:both;
 }
 .container{
-    width:80%;
+    width:90%;
     margin:0 auto
 }
 
@@ -51,7 +53,7 @@ html{
 header{
     background:#2a2955;
     width:100%;
-    height:108px;
+    height:85px;
     text-align: center;
 }
 .logo-top img{
@@ -61,7 +63,7 @@ header{
 }
 .site-logo img{
     width:175px;
-    margin-top:-38px;
+    margin-top:-48px;
     z-index:1000;
 }
 nav{
@@ -96,7 +98,7 @@ nav ul li:not(.drop){
     align-self: flex-start;
 }
 nav ul li:not(.drop){
-    margin-top:84px;
+    margin-top:61px;
 }
 nav ul li > ul > li:hover a{
     background:#2a2955;
@@ -136,20 +138,19 @@ nav ul li:hover > ul{
 }*/
 
 .hero img{
-    margin:0;
+    margin-bottom:50px;
 }
 .hero{
     position:relative;
     z-index:-100;
     overflow: hidden;
-    margin:0;
+    max-height:700px;
 }
 .headline{
-    float:right;
-    /*margin:-40px 40px 0 0;*/
     position:absolute;
-    top:10px;
+    top:0px;
     right:40px;
+    margin:0;
 }
 .headline h1{
     color:#2a2955;
@@ -166,15 +167,10 @@ nav ul li:hover > ul{
 }
 .icon-long-box{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;
-    height:279px;
     width:100%;
-    background-color:rgba(255,255,255,.3);
-    position:absolute;
-    bottom:78px;
-    overflow:visible;
-    padding:0 8%;
+    margin:50px 0;
 }
 .icon-box{
     display:flex;
@@ -184,28 +180,27 @@ nav ul li:hover > ul{
     padding:0 35px;
     text-align:center;
     color:#fff;
-    width:29%;
+    width:31%;
     height:355px;
     background-color:#b10305;
-    box-shadow: 3px 3px 20px -3px #000;
 }
 .icon-box img{
-   margin-top:20px;
+   margin:30px 0 15px 0;
 }
 .icon-box h1{
     font-weight:500;
-    margin-bottom:10px;
+    margin-bottom:0px;
     letter-spacing:.05em;
 }
 .icon-box p{
     color:#fff;
+    margin-top:5px;
 }
 .banner{
     display:flex;
     justify-content:center;
     align-items:center;
     color:#fff;
-    width:100%;
     height:54px;
     background-color:#2a2955;
     letter-spacing:.05em;
@@ -213,7 +208,7 @@ nav ul li:hover > ul{
     margin:-4px 0 0 0;
 }
 .intro-text{
-    margin:54px auto;
+    margin:30px 0 50px 0;
 }
 
 /* ===== PROJECTS ===== */
@@ -510,9 +505,10 @@ footer{
 
 
 
-
-
-
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
 
 
 
@@ -555,15 +551,18 @@ footer{
 
 
 @media (max-width: 1045px){
-    .headline{
+ /*   .headline{
         top:0px;
         right:30px;
-    }
-    .headline p{
+    }*/
+  /*  .headline p{
         margin-top: -20px;
+    }*/
+    .hero img{
+    margin-bottom:0;
     }
     .icon-box{
-        width:30%;
+        width:32%;
     }
     .footer-block{
          width:90%;   
@@ -581,9 +580,6 @@ footer{
     .footer-box-menu.left{
         margin:0 5px;
         }
-    .container{
-        width:81%;
-    }
 }
 
 
@@ -591,6 +587,9 @@ footer{
 @media (max-width: 910px){
     header{
         height:108px;
+    }
+    .container{
+        width:100%;
     }
     .logo-top img{
         margin:0 auto;
@@ -650,45 +649,45 @@ footer{
     .hamburger:after{
         transform:translateY(5px);
     }
-
-    .hero{
-        overflow: visible;
-        margin: 0;
-        }
-    .headline{
-        top:65%;
-        width: 100%;
-        margin: 0;
-        padding-left:40px;
-    }
-    .headline h1{
-        color:#fff;
-        letter-spacing:.05em;
-        font-size:4.5em;
-        font-weight:700;
-        text-align: center;
+    .hero img{
+        margin-bottom:0px;
     }
     .headline p{
         display:none;
     }
+    .hero{
+        position:relative;
+    }
+    .headline{
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top:70%;
+    }
+    .headline h1{
+        color:#fff;
+        text-align:center;
+        font-size:4em;
+    }
     .icon-long-box{
         background:#b10305;
         height:355px;
-        bottom:-350px;
         z-index:100;
+        margin:-5px 0 0 0;
     }
     .banner{
-        margin-top:350px;
-        }
+        margin-top:0px;
+    }
     .icon-box{
-        padding:0 10px;
+        padding:0 50px;
         color:#fff;
         width:100%;
         height:355px;
         box-shadow: none;
     }
     .icon-box img{
-        margin:20px 0 30px 0;
+        margin:20px 0 10px 0;
         max-width:100%;
     }
     .icon-box h2{
@@ -701,18 +700,21 @@ footer{
         line-height:24px;
         letter-spacing:.04em;
     }
+    .intro-text, .gallery{
+        padding:0 20px;
+    }
     .footer-block{
         justify-content: center;
-        }
+    }
     .footer-box-logo{
         width:40%;
-        }
+    }
     .footer-box.contact{
         margin-left:50px;;
-        }
+    }
     .footer-box-menu{
         display:none;
-}
+    }
 }
 
 
@@ -721,11 +723,10 @@ footer{
     .icon-long-box{
         flex-direction:column;
         height:950px;
-        bottom:-945px;
         z-index:100;
     }
     .icon-box{
-        padding:0 100px;
+        padding:50px 100px 20px 100px;
         color:#fff;
         width:100%;
         box-shadow: none;
@@ -744,19 +745,6 @@ footer{
         line-height:26px;
         letter-spacing:.04em;
     }
-    .banner{
-        margin-top:940px;
-        }
-    .headline{
-        top:63%;
-        padding-left:40px;
-    }
-    .headline h1{
-        color:#fff;
-        font-size:3em;
-        font-weight:700;
-        text-align: center;
-    }
     .logos{
         display:flex;
         justify-content:space-around;
@@ -770,6 +758,9 @@ footer{
     .logos img:not(:first-child){
         margin-top:90px;
         }
+     .headline{
+        top:65%;
+    }
 }
 
 
@@ -800,7 +791,7 @@ footer{
         margin:5px 0 54px 2px;
     }
     .icon-box{
-        padding:0 10px;
+        padding:0 50px;
     }
 }
 
@@ -818,20 +809,19 @@ footer{
         margin:-145px 10px 0 0;
     }
     .headline{
-        top:60%;
-        padding-left:40px;
+        top:65%;
     }
     .headline h1{
-        color:#fff;
-        font-size:2em;
-        font-weight:400;
-        text-align: center;
-    } 
+        font-size:2.5em;
+    }
     .icon-box p{
         font-size:14px;
         line-height:26px;
         letter-spacing:.04em;
         }
+    .icon-box-long{
+        padding-top:20px;
+    }
     footer{
         width:100%;
         height:850px;
